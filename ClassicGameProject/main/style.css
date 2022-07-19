@@ -1,0 +1,274 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-color: rgb(9, 17, 26);
+    color: white;
+}
+
+@font-face {
+    font-family: neon;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/neon.ttf);
+}
+
+.container {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.neon {
+    font-family: neon;
+    color: #FB4264;
+    font-size: 4vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #F40A35;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.flux {
+    font-family: neon;
+    color: #426DFB;
+    font-size: 9vw;
+    line-height: 9vw;
+    text-shadow: 0 0 3vw #2356FF;
+    text-align: center;
+}
+
+.neon {
+    animation: neon 1s ease infinite;
+    -moz-animation: neon 1s ease infinite;
+    -webkit-animation: neon 1s ease infinite;
+}
+
+@keyframes neon {
+
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+        color: #FED128;
+    }
+
+    50% {
+        text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+        color: #806914;
+    }
+}
+
+.flux {
+    animation: flux 2s linear infinite;
+    -moz-animation: flux 2s linear infinite;
+    -webkit-animation: flux 2s linear infinite;
+    -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+
+    0%,
+    100% {
+        text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+        color: #28D7FE;
+    }
+
+    50% {
+        text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+        color: #146C80;
+    }
+}
+
+td {
+    width: 14px;
+    height: 14px;
+}
+
+#gameField {
+    margin-left: 20px;
+    margin-top: 20px;
+    float: left;
+}
+
+#scoreField {
+    float: right;
+    background-color: rgb(14, 31, 49);
+    margin-top: 1.9px;
+    margin-left: 3px;
+    width: 100px;
+}
+
+#score,
+#level {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    height: 30px;
+}
+
+.sub {
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(21, 46, 74);
+    padding: 10px;
+    margin: 0px;
+}
+
+#about {
+    font-size: 20px;
+}
+
+#about:hover {
+    color: rgb(199, 82, 82);
+}
+
+#nextTable {
+    float: right;
+    margin: 0px;
+    position: absolute;
+    left: 398px;
+    top: 487px;
+}
+
+#help {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    height: 32px;
+    margin: 1px;
+}
+
+#comboField {
+    position: absolute;
+    left: 27px;
+    top: 320px;
+    width: 384px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+#pause,
+#gameover {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    visibility: hidden;
+    color: white;
+}
+
+.box {
+    /* box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    background-color: aliceblue;
+    border-radius: 0px 10px 100px 80px / 80px 60px 40px 20px; */
+    border-left: thick solid white;
+    height: 500px;
+    margin-left: 15%;
+}
+
+.box2 {
+    border-right: thick solid white;
+    height: 500px;
+    margin-right: 15%;
+}
+
+.totalbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid purple;
+    /* 화살표 */
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin-left: 30%;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-top: 20px solid purple;
+    /* 화살표 */
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin-left: 30%;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 20px solid purple;
+    /* 화살표 */
+    margin-left: 27%;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid purple;
+    /* 화살표 */
+    margin-left: 6%;
+}
+
+.arrow {
+    display: flex;
+    margin: 0%;
+}
+
+#cross {
+    background: red;
+    height: 100px;
+    position: relative;
+    width: 20px;
+    margin: 0;
+}
+
+#cross:after {
+    background: red;
+    content: "";
+    height: 20px;
+    left: -40px;
+    position: absolute;
+    top: 40px;
+    width: 100px;
+}
+
+.gamebox {
+    width: 700px;
+    height: 450px;
+    background: white;
+    position: relative;
+    top: 50%;
+    left: 35%;
+    border-radius: 30px;
+    border: 30px solid rgb(188, 186, 188);
+    color: black;
+}
+
+.gamebox2 {
+    width: 700px;
+    height: 300px;
+    background: rgb(188, 186, 188);
+    position: relative;
+    top: 50%;
+    left: 35%;
+    border-radius: 30px;
+    border: 30px solid rgb(188, 186, 188);
+    color: black;
+}
