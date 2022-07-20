@@ -309,6 +309,8 @@ function gameOver() {
     alert("[Game Over]\nLevel: " + level + "\nScore: " + score);
     document.getElementById("gameField").style.visibility = "hidden";
     document.getElementById("gameover").style.visibility = "visible";
+
+    document.location.href = "/main/main.html";
 }
 function pause() {
     if (isPaused) {
