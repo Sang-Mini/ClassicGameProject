@@ -82,7 +82,7 @@ body {
     outline: 0;
 }
 
-.login-box button:hover {
+.login-box button:hover, a:hover {
     background: #de2afe;
     color: #fff;
     border-radius: 5px;
@@ -208,4 +208,9 @@ body {
     line-height: 7vw;
     text-shadow: 0 0 3vw #7300b6;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #de2afe;
 }
