@@ -22,15 +22,22 @@
             <a href="login/login.html">로그인</a>
             <a href="signup/signUp.html">회원가입</a>
             <a href="#" onclick="openNav()">내정보</a>
+            <a href="main.html" onclick="logOut()">로그아웃</a>
         </div>
     </div>
 
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <ul>
-            <li>nick-name</li>
-            <li>game-history</li>
+            <li>${nick-name}</li>
+            <br>
+            <li>테트리스 점수 : ${점수}</li>
+            <li>스네이크 점수 : ${점수}</li>
+            <li>2048 : ${점수}</li>
         </ul>
+        <a href="/main/userupdate/userUpdate.html">
+            정보변경하기
+        </a>
     </div>
 
     <script>
@@ -43,6 +50,10 @@
         function closeNav() {
             document.getElementById("mySidenav").style.width = "0";
             document.getElementById("mySidenav").style.borderStyle = "none";
+        }
+
+        function logOut() {
+            alert("로그아웃 되었습니다.")
         }
     </script>
 
@@ -125,6 +136,34 @@
                 <img src="https://xotgame.com/static/upload/games/20220416/a69f683ba09950e71437b33c89c251b7.png"
                     alt="Minion Rush">
                 <p>Minion Rush</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="https://xotgame.com/static/upload/games/20210802/feabe10a22ecd92d30ac7998b525dc5f.jpg"
+                    alt="Clash Royale">
+                <p>Clash Royale</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="https://xotgame.com/static/upload/games/20211011/21ac777aea834b0fadb743eb0f44832e.png"
+                    alt="Cookie Run: Kingdom">
+                <p>Cookie Run: Kingdom</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="https://xotgame.com/static/upload/games/20211012/8457aeb8b4464636ef698a52032bef12.png"
+                    alt="Pokémon UNITE">
+                <p>Pokémon UNITE</p>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <img src="https://xotgame.com/static/upload/games/20210802/02edb6fcd1f965cea255ac91cf55e2ca.png"
+                    alt="Mob Control">
+                <p>Mob Control</p>
             </a>
         </li>
     </ul>
