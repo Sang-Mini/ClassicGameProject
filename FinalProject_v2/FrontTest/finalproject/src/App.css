@@ -1,0 +1,503 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* 여기서부터 공통 css 시작 */
+.user-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.user-bg-rectangle {
+  background-color: #1E1E1E;
+  width: 1100px;
+  height: 650px;
+  position: relative;
+  border: 1px solid #000000;
+}
+
+.user-bg-title {
+  margin-top: 270px;
+  margin-left: 150px;
+  display: flex;
+}
+/* 여기까지 공통 css 종료 */
+
+/* 여기서부터 Login 페이지 css 시작 */
+.login-title-img {
+  margin-top: 20%;
+}
+
+.login-logo-img {
+  margin-left: 5%;
+  margin-bottom: 19%;
+}
+
+.login-rectangle {
+  background: #ffffff;
+  box-sizing: border-box;
+  width: 400px;
+  height: 600px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  position: absolute;
+
+  margin-left: 600px;
+}
+
+.login-input-id {
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+
+  border: 1px solid #494949;
+  border-radius: 8px;
+
+  margin-left: 50px;
+  margin-top: 10%;
+}
+
+.login-input-id::placeholder, .login-input-pw::placeholder {
+  text-indent: 15px;
+}
+
+.login-input-pw {
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+
+  border: 1px solid #494949;
+  border-radius: 8px;
+
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.login-find-id > a, .login-find-pw > a, .create-account > a {
+  color: #000000;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: none;
+  float: right;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.login-button {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 300px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.google-login, .facebook-login, .apple-login {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  width: 75px;
+  height: 48px;
+  border: 0;
+  margin-bottom: -10px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+.sns-login-buttons {
+  position:absolute;
+  margin-left: 12%;
+  margin-top: 12%;
+}
+/* 여기까지 Login 페이지 css 종료 */
+
+/* 여기서부터 회원가입 페이지 css 시작 */
+.user-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.user-bg-rectangle {
+  background-color: #1E1E1E;
+  width: 1100px;
+  height: 650px;
+  position: relative;
+  border: 1px solid #000000;
+}
+
+.user-bg-title {
+  margin-top: 270px;
+  margin-left: 150px;
+  display: flex;
+}
+
+.register-title-img {
+  margin-top: 20%;
+}
+
+.register-logo-img {
+  margin-left: 5%;
+  margin-bottom: 19%;
+}
+
+.register-rectangle {
+  background: #ffffff;
+  box-sizing: border-box;
+  width: 400px;
+  height: 600px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  position: absolute;
+
+  margin-left: 600px;
+}
+
+.register-input-name {
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+
+  border: 1px solid #494949;
+  border-radius: 8px;
+
+  margin-left: 50px;
+  margin-top: 1%;
+}
+
+.register-input-name::placeholder, .register-input-mail::placeholder,
+.register-input-id::placeholder, .register-input-pw::placeholder,
+.register-input-re-pw::placeholder {
+  text-indent: 15px;
+}
+
+.register-input-mail, .register-input-id,
+.register-input-pw, .register-input-re-pw {
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+
+  border: 1px solid #494949;
+  border-radius: 8px;
+
+  margin-left: 50px;
+  margin-top: 0%;
+}
+
+.register-button {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 300px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.register-input-name-text {
+  margin-left: 36%;
+  margin-bottom: 1%;
+  font-weight: 5;
+}
+
+.register-input-mail-text{
+  margin-left: 35%;
+  margin-bottom: 1%;
+  font-weight: 5;
+}
+
+.register-input-id-text {
+  margin-left: 29%;
+  margin-bottom: 1%;
+  font-weight: 5;
+}
+
+.register-input-pw-text {
+  margin-left: 28%;
+  margin-bottom: 1%;
+  font-weight: 5;
+}
+
+.register-input-re-pw-text {
+  margin-left: 29%;
+  margin-bottom: 1%;
+  font-weight: 5;
+}
+/* 여기까지 회원가입 페이지 css 종료 */
+
+/* 여기서부터 Find Id 페이지 css 시작 */
+.findid-title-img {
+  margin-top: 25%;
+}
+
+.findid-logo-img {
+  margin-left: 5%;
+  margin-bottom: 23%;
+}
+
+.findid-rectangle {
+  background: #ffffff;
+  box-sizing: border-box;
+  width: 400px;
+  height: 600px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  position: absolute;
+
+  margin-left: 600px;
+}
+
+.findid-input-name {
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+
+  border: 1px solid #494949;
+  border-radius: 8px;
+
+  margin-left: 50px;
+  margin-top: 1%;
+}
+
+.findid-input-name::placeholder, .findid-input-email::placeholder {
+  text-indent: 15px;
+}
+
+.findid-input-email {
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+
+  border: 1px solid #494949;
+  border-radius: 8px;
+
+  margin-left: 50px;
+  margin-top: 1%;
+}
+
+.find-pw > a {
+  color: #000000;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: none;
+  float: right;
+  margin-right: 50px;
+  margin-top: 10px;
+}
+
+.findid-button {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 300px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.findid-input-name-text, .findid-input-email-text {
+  margin-left: 35%;
+  margin-bottom: 0%;
+  font-weight: 5;
+}
+
+.findid-input-name-text {
+  margin-top: 13%;
+}
+/* 여기까지 Find Id 페이지 css 종료 */
+
+/* 여기서부터 Find Pw 페이지 css 시작 */
+.findpw-title-img {
+  margin-left: 25%;
+  margin-top: 7%;
+}
+
+.findpw-logo-img {
+  margin-left: 5%;
+  margin-bottom: 0%;
+  margin-top: 5%;
+}
+
+.findpw-rectangle {
+  background: #ffffff;
+  box-sizing: border-box;
+  width: 400px;
+  height: 600px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  position: absolute;
+
+  margin-left: 600px;
+}
+
+.findpw-input-name {
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+
+  border: 1px solid #494949;
+  border-radius: 8px;
+
+  margin-left: 50px;
+  margin-top: 1%;
+}
+
+.findpw-input-name::placeholder, .findpw-input-email::placeholder,
+.findpw-input-id::placeholder, .findpw-input-cn::placeholder {
+  text-indent: 15px;
+}
+
+.findpw-input-email, .findpw-input-id, .findpw-input-cn {
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+
+  border: 1px solid #494949;
+  border-radius: 8px;
+
+  margin-left: 50px;
+  margin-top: 1%;
+}
+
+.findpw-button {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 300px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.findpw-input-name-text, .findpw-input-id-text,
+.findpw-input-email-text, .findpw-input-cn-text {
+  margin-left: 35%;
+  margin-bottom: 0%;
+  font-weight: 5;
+}
+
+.findpw-input-name-text {
+  margin-top: 7%;
+}
+/* 여기까지 Find Pw 페이지 css 종료 */
+
+/* 여기서부터 Reset Pw 페이지 css 시작 */
+.resetpw-title-img {
+  margin-left: 26%;
+  margin-top: 13%;
+  margin-bottom: 6%;
+}
+
+.resetpw-logo-img {
+  margin-left: 5%;
+  margin-bottom: 0%;
+  margin-top: 5%;
+}
+
+.resetpw-rectangle {
+  background: #ffffff;
+  box-sizing: border-box;
+  width: 400px;
+  height: 600px;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  position: absolute;
+
+  margin-left: 600px;
+}
+
+.resetpw-input-pw {
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+
+  border: 1px solid #494949;
+  border-radius: 8px;
+
+  margin-left: 50px;
+  margin-top: 1%;
+}
+
+.resetpw-input-pw::placeholder, .resetpw-re-input-pw::placeholder {
+  text-indent: 15px;
+}
+
+.resetpw-re-input-pw {
+  box-sizing: border-box;
+  width: 300px;
+  height: 40px;
+
+  border: 1px solid #494949;
+  border-radius: 8px;
+
+  margin-left: 50px;
+  margin-top: 1%;
+}
+
+.resetpw-button {
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 300px;
+  height: 40px;
+  margin-left: 50px;
+  margin-top: 60px;
+}
+
+.resetpw-input-pw-text {
+  margin-left: 28%;
+  margin-bottom: 0%;
+  font-weight: 5;
+}
+
+.resetpw-re-input-pw-text {
+  margin-left: 35%;
+  margin-bottom: 0%;
+  font-weight: 5;
+}
+/* 여기까지 Reset Pw 페이지 css 종료 */
